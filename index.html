@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GreenTech Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="title">GreenTech Solutions Customer Feedback Survey</h1>
+        <p id="description">
+          We value your feedback! Please take a moment to share your thoughts on
+          our products and services.
+        </p>
+      </header>
+      <main>
+        <form id="survey-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Enter your full name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email address"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="number">Age (optional)</label>
+            <input
+              type="number"
+              id="number"
+              name="age"
+              min="18"
+              max="99"
+              placeholder="Enter your age (18+)"
+            />
+          </div>
+          <div class="form-group">
+            <label for="dropdown">Product Purchased</label>
+            <select id="dropdown" name="product">
+              <option value="" disabled selected>Select a product</option>
+              <option value="solar-panels">Solar Panels</option>
+              <option value="eco-friendly-batteries">
+                Eco-Friendly Batteries
+              </option>
+              <option value="water-purifies">Water Purifiers</option>
+              <option value="electric-vehicle-charges">
+                Electric Vehicle Chargers
+              </option>
+              <option value="smart-termostats">Smart Thermostats</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="">Rate Your Experience</label>
+            <label for="rating1">1</label>
+            <input type="radio" id="rating1" name="rating" />
+            <label for="rating2">2</label>
+            <input type="radio" id="rating2" name="rating" />
+            <label for="rating3">3</label>
+            <input type="radio" id="rating3" name="rating" />
+            <label for="rating4">4</label>
+            <input type="radio" id="rating4" name="rating" />
+            <label for="rating5">5</label>
+            <input type="radio" id="rating5" name="rating" />
+          </div>
+          <div class="form-group">
+            <label for="referral">How did you hear about us?</label>
+            <select id="referral" name="referral">
+              <option value="" disabled selected>Select an option</option>
+              <option value="social-media">Social Media</option>
+              <option value="friend">Friend</option>
+              <option value="advertisement">Advertisement</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Favorite Features</label>
+            <label for="sustainability">Sustainability</label>
+            <input
+              type="checkbox"
+              id="sustainability"
+              name="features"
+              value="sustainability"
+            />
+            <label for="innovation">Innovation</label>
+            <input
+              type="checkbox"
+              id="innovation"
+              name="features"
+              value="innovation"
+            />
+            <label for="support">Support</label>
+            <input
+              type="checkbox"
+              id="support"
+              name="features"
+              value="support"
+            />
+            <label for="price">Price</label>
+            <input type="checkbox" id="price" name="features" value="price" />
+            <label for="quality">Quality</label>
+            <input
+              type="checkbox"
+              id="quality"
+              name="features"
+              value="quality"
+            />
+          </div>
+          <div class="form-group">
+            <label for="suggestions">Suggestions for Improvement</label>
+            <textarea
+              id="suggestions"
+              name="suggestions"
+              rows="4"
+              placeholder="We will be
+            happy to hear any suggestions from you!"
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit">Submit Feedback</button>
+          </div>
+        </form>
+      </main>
+      <footer class="footer">
+        <p class="footer-text">
+          Thank you for helping us grow greener together!
+        </p>
+        <ul class="socials-list">
+          <li class="socials-list-item">
+            <a class="socials-list-link" href="">
+              <svg class="socials-list-icon" width="24" height="24">
+                <use href="./img/icons.svg#linkedin-icon"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials-list-item">
+            <a class="socials-list-link" href="">
+              <svg class="socials-list-icon" width="24" height="24">
+                <use href="./img/icons.svg#facebook-icon"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials-list-item">
+            <a class="socials-list-link" href="">
+              <svg class="socials-list-icon" width="24" height="24">
+                <use href="./img/icons.svg#instagram-icon"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials-list-item">
+            <a class="socials-list-link" href="">
+              <svg class="socials-list-icon" width="24" height="24">
+                <use href="./img/icons.svg#twitter-icon"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>
