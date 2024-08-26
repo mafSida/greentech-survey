@@ -1,0 +1,137 @@
+body {
+  min-height: 100vh;
+  background-color: #e9efd9;
+  background: linear-gradient(
+      to bottom,
+      #e9efd9cc,
+      #bfd0a9cc,
+      #95b07ecc,
+      #678e68cc,
+      #4c6d3ccc
+    ),
+    url(../img/bg-img.jpg) no-repeat center center;
+  background-size: cover;
+  color: #2d4a2f;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+  font-style: normal;
+  color: currentColor;
+}
+
+button {
+  cursor: pointer;
+  box-shadow: none;
+  border: none;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: rgba(245, 240, 225, 0.35);
+  border: 1px solid rgba(76, 109, 60, 0.65);
+}
+
+header {
+}
+
+label {
+  color: #2d4a2f;
+  font-family: "Lora", serif;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+select {
+  background-color: #ffffff;
+  border: 1px solid #95b07e;
+  color: #2d4a2f;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+textarea:focus,
+select:focus {
+  border-color: #2d4a2f;
+  outline: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: rgba(45, 74, 47, 0.6);
+}
+
+.header-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 0;
+}
+.header-description {
+  color: #4c6d3c;
+}
+
+.main {
+}
+.form-group {
+}
+
+.footer {
+}
+.footer-text {
+  color: #4c6d3c;
+}
+.socials-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.socials-list-item {
+}
+.socials-list-link {
+}
+.socials-list-icon {
+  fill: #2d4a2f;
+}
