@@ -26,121 +26,240 @@
         </p>
       </header>
       <main class="main">
-        <form id="survey-form">
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input
-              type="text"
-              id="name"
-              placeholder="Enter your full name"
-              required
-            />
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              placeholder="Enter your email address"
-              required
-            />
-          </div>
-          <div class="form-group">
-            <label for="number">Age (optional)</label>
-            <input
-              type="number"
-              id="number"
-              name="age"
-              min="18"
-              max="99"
-              placeholder="Enter your age (18+)"
-            />
-          </div>
-          <div class="form-group">
-            <label for="dropdown">Product Purchased</label>
-            <select id="dropdown" name="product">
-              <option value="" disabled selected>Select a product</option>
-              <option value="solar-panels">Solar Panels</option>
-              <option value="eco-friendly-batteries">
-                Eco-Friendly Batteries
-              </option>
-              <option value="water-purifies">Water Purifiers</option>
-              <option value="electric-vehicle-charges">
-                Electric Vehicle Chargers
-              </option>
-              <option value="smart-termostats">Smart Thermostats</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="">Rate Your Experience</label>
-            <label for="rating1">1</label>
-            <input type="radio" id="rating1" name="rating" />
-            <label for="rating2">2</label>
-            <input type="radio" id="rating2" name="rating" />
-            <label for="rating3">3</label>
-            <input type="radio" id="rating3" name="rating" />
-            <label for="rating4">4</label>
-            <input type="radio" id="rating4" name="rating" />
-            <label for="rating5">5</label>
-            <input type="radio" id="rating5" name="rating" />
-          </div>
-          <div class="form-group">
-            <label for="referral">How did you hear about us?</label>
-            <select id="referral" name="referral">
-              <option value="" disabled selected>Select an option</option>
-              <option value="social-media">Social Media</option>
-              <option value="friend">Friend</option>
-              <option value="advertisement">Advertisement</option>
-              <option value="other">Other</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label>Favorite Features</label>
-            <label for="sustainability">Sustainability</label>
-            <input
-              type="checkbox"
-              id="sustainability"
-              name="features"
-              value="sustainability"
-            />
-            <label for="innovation">Innovation</label>
-            <input
-              type="checkbox"
-              id="innovation"
-              name="features"
-              value="innovation"
-            />
-            <label for="support">Support</label>
-            <input
-              type="checkbox"
-              id="support"
-              name="features"
-              value="support"
-            />
-            <label for="price">Price</label>
-            <input type="checkbox" id="price" name="features" value="price" />
-            <label for="quality">Quality</label>
-            <input
-              type="checkbox"
-              id="quality"
-              name="features"
-              value="quality"
-            />
-          </div>
-          <div class="form-group">
-            <label for="suggestions">Suggestions for Improvement</label>
-            <textarea
-              id="suggestions"
-              name="suggestions"
-              rows="4"
-              placeholder="We will be
-            happy to hear any suggestions from you!"
-            ></textarea>
-          </div>
-          <div class="form-group">
-            <button type="submit">Submit Feedback</button>
-          </div>
-        </form>
+        <div class="form-container">
+          <form id="survey-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                placeholder="Enter your full name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter your email address"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="number">Age (optional)</label>
+              <input
+                type="number"
+                id="number"
+                name="age"
+                min="18"
+                max="99"
+                placeholder="Enter your age (18+)"
+              />
+            </div>
+            <div class="form-group">
+              <label for="dropdown">Product Purchased</label>
+              <select id="dropdown" name="product">
+                <option value="" disabled selected>Select a product</option>
+                <option value="solar-panels">Solar Panels</option>
+                <option value="eco-friendly-batteries">
+                  Eco-Friendly Batteries
+                </option>
+                <option value="water-purifies">Water Purifiers</option>
+                <option value="electric-vehicle-charges">
+                  Electric Vehicle Chargers
+                </option>
+                <option value="smart-termostats">Smart Thermostats</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="">Rate Your Experience</label>
+
+              <div class="rating-group">
+                <div class="rating-group-item">
+                  <input type="radio" id="rating1" name="rating" />
+                  <label class="rating-label" for="rating1">
+                    <svg class="star-icon" width="12" height="12">
+                      <use href="./img/star-icons.svg#star-full-icon"></use>
+                    </svg>
+                    <svg class="star-icon-empty" width="12" height="12">
+                      <use href="./img/star-icons.svg#star-empty-icon"></use>
+                    </svg>
+                    <svg class="star-icon-empty" width="12" height="12">
+                      <use href="./img/star-icons.svg#star-empty-icon"></use>
+                    </svg>
+                    <svg class="star-icon-empty" width="12" height="12">
+                      <use href="./img/star-icons.svg#star-empty-icon"></use>
+                    </svg>
+                    <svg class="star-icon-empty" width="12" height="12">
+                      <use href="./img/star-icons.svg#star-empty-icon"></use>
+                    </svg>
+                  </label>
+                </div>
+                <div class="rating-group-item">
+                  <input type="radio" id="rating2" name="rating" />
+                  <label class="rating-label" for="rating2">
+                    <svg class="star-icon" width="12" height="12">
+                      <use href="./img/star-icons.svg#star-full-icon"></use>
+                    </svg>
+                    <svg class="star-icon" width="12" height="12">
+                      <use href="./img/star-icons.svg#star-full-icon"></use>
+                    </svg>
+                    <svg class="star-icon" width="12" height="12">
+                      <use href="./img/star-icons.svg#star-full-icon"></use>
+                    </svg>
+                    <svg class="star-icon" width="12" height="12">
+                      <use href="./img/star-icons.svg#star-full-icon"></use>
+                    </svg>
+                    <svg class="star-icon" width="12" height="12">
+                      <use href="./img/star-icons.svg#star-full-icon"></use>
+                    </svg>
+                  </label>
+                </div>
+                <div class="rating-group-item">
+                  <input type="radio" id="rating3" name="rating" />
+                  <label class="rating-label" for="rating3">
+                    <svg class="star-icon" width="12" height="12">
+                      <use href="./img/star-icons.svg#star-full-icon"></use>
+                    </svg>
+                    <svg class="star-icon" width="12" height="12">
+                      <use href="./img/star-icons.svg#star-full-icon"></use>
+                    </svg>
+                    <svg class="star-icon" width="12" height="12">
+                      <use href="./img/star-icons.svg#star-full-icon"></use>
+                    </svg>
+                    <svg class="star-icon" width="12" height="12">
+                      <use href="./img/star-icons.svg#star-full-icon"></use>
+                    </svg>
+                    <svg class="star-icon" width="12" height="12">
+                      <use href="./img/star-icons.svg#star-full-icon"></use>
+                    </svg>
+                  </label>
+                </div>
+                <div class="rating-group-item">
+                  <input type="radio" id="rating4" name="rating" />
+                  <label class="rating-label" for="rating4">
+                    <svg class="star-icon" width="12" height="12">
+                      <use href="./img/star-icons.svg#star-full-icon"></use>
+                    </svg>
+                    <svg class="star-icon" width="12" height="12">
+                      <use href="./img/star-icons.svg#star-full-icon"></use>
+                    </svg>
+                    <svg class="star-icon" width="12" height="12">
+                      <use href="./img/star-icons.svg#star-full-icon"></use>
+                    </svg>
+                    <svg class="star-icon" width="12" height="12">
+                      <use href="./img/star-icons.svg#star-full-icon"></use>
+                    </svg>
+                    <svg class="star-icon" width="12" height="12">
+                      <use href="./img/star-icons.svg#star-full-icon"></use>
+                    </svg>
+                  </label>
+                </div>
+                <div class="rating-group-item">
+                  <input type="radio" id="rating5" name="rating" />
+                  <label class="rating-label" for="rating5">
+                    <svg class="star-icon" width="12" height="12">
+                      <use href="./img/star-icons.svg#star-full-icon"></use>
+                    </svg>
+                    <svg class="star-icon" width="12" height="12">
+                      <use href="./img/star-icons.svg#star-full-icon"></use>
+                    </svg>
+                    <svg class="star-icon" width="12" height="12">
+                      <use href="./img/star-icons.svg#star-full-icon"></use>
+                    </svg>
+                    <svg class="star-icon" width="12" height="12">
+                      <use href="./img/star-icons.svg#star-full-icon"></use>
+                    </svg>
+                    <svg class="star-icon" width="12" height="12">
+                      <use href="./img/star-icons.svg#star-full-icon"></use>
+                    </svg>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="referral">How did you hear about us?</label>
+              <select id="referral" name="referral">
+                <option class="disabled" value="" disabled selected>
+                  Select an option
+                </option>
+                <option value="social-media">Social Media</option>
+                <option value="friend">Friend</option>
+                <option value="advertisement">Advertisement</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Favorite Features (Check all that apply)</label>
+              <div class="features-wrap">
+                <div class="features-item">
+                  <input
+                    type="checkbox"
+                    id="sustainability"
+                    name="features"
+                    value="sustainability"
+                  />
+                  <label class="features-label" for="sustainability"
+                    >Sustainability</label
+                  >
+                </div>
+                <div class="features-item">
+                  <input
+                    type="checkbox"
+                    id="innovation"
+                    name="features"
+                    value="innovation"
+                  />
+                  <label class="features-label" for="innovation">
+                    Innovation
+                  </label>
+                </div>
+                <div class="features-item">
+                  <input
+                    type="checkbox"
+                    id="support"
+                    name="features"
+                    value="support"
+                  />
+                  <label class="features-label" for="support"> Support</label>
+                </div>
+
+                <div class="features-item">
+                  <input
+                    type="checkbox"
+                    id="price"
+                    name="features"
+                    value="price"
+                  />
+                  <label class="features-label" for="price"> Price </label>
+                </div>
+
+                <div class="features-item">
+                  <input
+                    type="checkbox"
+                    id="quality"
+                    name="features"
+                    value="quality"
+                  />
+                  <label class="features-label" for="quality"> Quality</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="suggestions">Suggestions for Improvement</label>
+              <textarea
+                id="suggestions"
+                name="suggestions"
+                rows="4"
+                placeholder="We will be happy to hear any suggestions from you!"
+              ></textarea>
+            </div>
+            <div class="form-group btn">
+              <button class="sumbit-btn" type="submit">Submit Feedback</button>
+            </div>
+          </form>
+        </div>
       </main>
       <footer class="footer">
         <p class="footer-text">
@@ -149,28 +268,28 @@
         <ul class="socials-list">
           <li class="socials-list-item">
             <a class="socials-list-link" href="">
-              <svg class="socials-list-icon" width="24" height="24">
+              <svg class="socials-list-icon" width="16" height="16">
                 <use href="./img/icons.svg#linkedin-icon"></use>
               </svg>
             </a>
           </li>
           <li class="socials-list-item">
             <a class="socials-list-link" href="">
-              <svg class="socials-list-icon" width="24" height="24">
+              <svg class="socials-list-icon" width="16" height="16">
                 <use href="./img/icons.svg#facebook-icon"></use>
               </svg>
             </a>
           </li>
           <li class="socials-list-item">
             <a class="socials-list-link" href="">
-              <svg class="socials-list-icon" width="24" height="24">
+              <svg class="socials-list-icon" width="16" height="16">
                 <use href="./img/icons.svg#instagram-icon"></use>
               </svg>
             </a>
           </li>
           <li class="socials-list-item">
             <a class="socials-list-link" href="">
-              <svg class="socials-list-icon" width="24" height="24">
+              <svg class="socials-list-icon" width="16" height="16">
                 <use href="./img/icons.svg#twitter-icon"></use>
               </svg>
             </a>
