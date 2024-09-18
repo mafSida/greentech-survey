@@ -76,7 +76,7 @@
               <label for="">Rate Your Experience</label>
               <div class="rating-group">
                 <div class="rating-group-item">
-                  <input type="radio" id="rating1" name="rating" />
+                  <input type="radio" id="rating1" name="rating" required />
                   <label class="rating-label" for="rating1">
                     <svg class="star-icon" width="12" height="12">
                       <use href="./img/star-icons.svg#star-full-icon"></use>
@@ -96,7 +96,7 @@
                   </label>
                 </div>
                 <div class="rating-group-item">
-                  <input type="radio" id="rating2" name="rating" />
+                  <input type="radio" id="rating2" name="rating" required />
                   <label class="rating-label" for="rating2">
                     <svg class="star-icon" width="12" height="12">
                       <use href="./img/star-icons.svg#star-full-icon"></use>
@@ -116,7 +116,7 @@
                   </label>
                 </div>
                 <div class="rating-group-item">
-                  <input type="radio" id="rating3" name="rating" />
+                  <input type="radio" id="rating3" name="rating" required />
                   <label class="rating-label" for="rating3">
                     <svg class="star-icon" width="12" height="12">
                       <use href="./img/star-icons.svg#star-full-icon"></use>
@@ -136,7 +136,7 @@
                   </label>
                 </div>
                 <div class="rating-group-item">
-                  <input type="radio" id="rating4" name="rating" />
+                  <input type="radio" id="rating4" name="rating" required />
                   <label class="rating-label" for="rating4">
                     <svg class="star-icon" width="12" height="12">
                       <use href="./img/star-icons.svg#star-full-icon"></use>
@@ -156,7 +156,13 @@
                   </label>
                 </div>
                 <div class="rating-group-item">
-                  <input type="radio" id="rating5" name="rating" />
+                  <input
+                    type="radio"
+                    id="rating5"
+                    name="rating"
+                    required
+                    checked
+                  />
                   <label class="rating-label" for="rating5">
                     <svg class="star-icon" width="12" height="12">
                       <use href="./img/star-icons.svg#star-full-icon"></use>
@@ -255,7 +261,7 @@
               ></textarea>
             </div>
             <div class="form-group btn">
-              <button class="sumbit-btn" type="submit">Submit Feedback</button>
+              <button class="submit-btn" type="submit">Submit Feedback</button>
             </div>
           </form>
         </div>
@@ -266,28 +272,56 @@
         </p>
         <ul class="socials-list">
           <li class="socials-list-item">
-            <a class="socials-list-link" href="">
+            <a
+              class="socials-list-link"
+              href="https://www.linkedin.com/"
+              target="_blank"
+              nofollow
+              noreferrer
+              noopener
+            >
               <svg class="socials-list-icon" width="16" height="16">
                 <use href="./img/icons.svg#linkedin-icon"></use>
               </svg>
             </a>
           </li>
           <li class="socials-list-item">
-            <a class="socials-list-link" href="">
+            <a
+              class="socials-list-link"
+              href="https://www.facebook.com/"
+              target="_blank"
+              nofollow
+              noreferrer
+              noopener
+            >
               <svg class="socials-list-icon" width="16" height="16">
                 <use href="./img/icons.svg#facebook-icon"></use>
               </svg>
             </a>
           </li>
           <li class="socials-list-item">
-            <a class="socials-list-link" href="">
+            <a
+              class="socials-list-link"
+              href="https://www.instagram.com/"
+              target="_blank"
+              nofollow
+              noreferrer
+              noopener
+            >
               <svg class="socials-list-icon" width="16" height="16">
                 <use href="./img/icons.svg#instagram-icon"></use>
               </svg>
             </a>
           </li>
           <li class="socials-list-item">
-            <a class="socials-list-link" href="">
+            <a
+              class="socials-list-link"
+              href="https://x.com/"
+              target="_blank"
+              nofollow
+              noreferrer
+              noopener
+            >
               <svg class="socials-list-icon" width="16" height="16">
                 <use href="./img/icons.svg#twitter-icon"></use>
               </svg>
@@ -296,5 +330,6 @@
         </ul>
       </footer>
     </div>
+    <script src="./js/script.js"></script>
   </body>
 </html>

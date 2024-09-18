@@ -53,7 +53,7 @@ button {
 
 .container {
   max-width: 800px;
-  margin: 48px 96px;
+  margin: 5% auto;
 }
 
 header {
@@ -99,6 +99,7 @@ textarea:focus,
 select:focus {
   border-color: #2d4a2f;
   outline: none;
+  box-shadow: 0 0 5px rgba(45, 74, 47, 0.3);
 }
 
 input::placeholder,
@@ -182,7 +183,7 @@ textarea::placeholder {
   align-items: center;
 }
 
-.sumbit-btn {
+.submit-btn {
   background-color: #4c6d3c;
   padding: 16px;
   height: 42px;
@@ -193,10 +194,16 @@ textarea::placeholder {
   border-radius: 4px;
   color: #ffffff;
   margin: 0 auto;
-  transition: transform 0.1s ease, box-shadow 0.1s ease;
+  transition: transform 0.1s ease, box-shadow 0.1s ease,
+    background-color 0.5 ease;
 }
 
-.sumbit-btn:active {
+.submit-btn:hover,
+.submit-btn:focus {
+  background-color: #2d4a2f;
+}
+
+.submit-btn:active {
   transform: scale(0.95);
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
 }
